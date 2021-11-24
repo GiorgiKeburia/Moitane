@@ -27,10 +27,18 @@ const Main = () => {
       arr[currentDay].to.slice(0, 5).replace(":", ".")
     );
 
-    if (current >= shopStarts && current <= shopEnds) {
-      return true;
-    } else {
-      return false;
+    if (shopEnds > shopStarts) {
+      if (current >= shopStarts && current <= shopEnds) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (shopStarts > shopEnds) {
+      if (current >= shopEnds && current <= shopStarts) {
+        return true;
+      } else {
+        return false;
+      }
     }
   };
 
@@ -53,6 +61,7 @@ const Main = () => {
         <h1>პარტნიორი მაღაზიები</h1>
         <h3>აირჩიე მაღაზია</h3>
       </div>
+      {shopsError && <p>Error wile fetchind Data</p>}
       <div className="cards">
         {!shopsIsLoading &&
           shopsData.shops.map((obj, i) => {
