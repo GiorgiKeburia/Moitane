@@ -1,24 +1,17 @@
-import useFetch from "./hooks/use-fetch";
-import "./App.css";
+import React from "react";
+
 import Header from "./Components/Header/Header";
+import Slide from "./Components/Slide/Slide";
+import Main from "./Components/Main/Main";
 
 function App() {
-  const {
-    data: bannersData,
-    isLoading: bannersIsLoading,
-    httpError: bannersError,
-  } = useFetch("https://moitane-api.lemon.do/v1/Banners");
-
-  const {
-    data: shopsData,
-    isLoading: shopsIsLoading,
-    httpError: shopsError,
-  } = useFetch("https://moitane-api.lemon.do/v1/Shops");
-
-  console.log(bannersData);
-  console.log(shopsData);
-
-  return <Header />;
+  return (
+    <React.Fragment>
+      <Header />
+      <Slide />
+      <Main />
+    </React.Fragment>
+  );
 }
 
 export default App;

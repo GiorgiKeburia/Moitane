@@ -1,0 +1,124 @@
+@import url("//cdn.web-fonts.ge/fonts/alk-rex-bold/css/alk-rex-bold.min.css");
+.container-slider {
+  max-width: 500%;
+  height: 380px;
+  position: relative;
+  margin: 6rem 300px 2rem 300px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.active-anim {
+  opacity: 1;
+}
+
+.btn-slide {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff00;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.orderBtn {
+  border-radius: 6px;
+  padding: 10px 25px;
+  font-size: 15px;
+  color: #00966c;
+  top: 70%;
+  left: 5%;
+  background: #ffffff;
+  position: absolute;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.title {
+  font-size: 30px;
+  color: #ffffff;
+  top: 30%;
+  left: 5%;
+  position: absolute;
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ALK Rex Bold", sans-serif;
+}
+.description {
+  font-size: 15px;
+  color: #e0e0e0;
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-slide img {
+  pointer-events: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+.prev {
+  top: 50%;
+  object-fit: cover;
+  left: -30px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  object-fit: cover;
+  right: -30px;
+  transform: translateY(-60%);
+}
+
+@media screen and (max-width: 1550px) {
+  .container-slider {
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .container-slider {
+    margin-right: 180px;
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-slider {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .container-slider {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-slider {
+    margin: 100px 10px 0;
+  }
+}

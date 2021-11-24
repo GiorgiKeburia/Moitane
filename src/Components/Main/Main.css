@@ -1,0 +1,48 @@
+@import url("//cdn.web-fonts.ge/fonts/alk-rex-bold/css/alk-rex-bold.min.css");
+.main {
+  padding: 1rem 317px;
+}
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.main-head h1 {
+  font-size: 20px;
+  font-family: "ALK Rex Bold", sans-serif;
+}
+.main-head h3 {
+  font-size: 16px;
+  font-family: "ALK Rex Bold", sans-serif;
+  color: #696974;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1550px) {
+  .main {
+    padding: 1rem 250px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .main {
+    padding: 1rem 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 1rem 150px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .main {
+    padding: 1rem 130px;
+  }
+}

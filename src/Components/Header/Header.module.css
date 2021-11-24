@@ -1,15 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+.HeaderMain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .header {
-  margin: 0;
-  padding: 0 150px;
+  margin: 0 auto 2rem auto;
   top: 0px;
   left: 0px;
-  height: 90px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  height: 80px;
+  background: #ffffff;
   opacity: 1;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
   align-items: center;
 }
 .right-content {
@@ -60,4 +72,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1550px) {
+  .header {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .header {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .header {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
